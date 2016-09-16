@@ -1,0 +1,35 @@
+.main-header {
+	background-color: #233;
+	color: red;
+	padding: 10px;
+	text-align: center;
+	border-radius: 60px;
+	text-shadow: 20px;
+}
+h1{
+	text-shadow: 20px;
+}
+.square {
+    position: relative;
+    background: blue;
+    width: 50px;
+    height: 50px;
+}
+.square::before {
+    position: absolute;
+    left: 50px;    
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: green;
+}
+.square::after {
+    position: absolute;
+    left: 50px;
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: red;    
+}
